@@ -8,5 +8,9 @@
   { "keys": ["ctrl+alt+c", "ctrl+alt+w"], "command": "convert_to_separate_words"},
   { "keys": ["ctrl+alt+c", "ctrl+alt+/"], "command": "convert_to_slash"},
   { "keys": ["ctrl+alt+c", "ctrl+alt+b"], "command": "convert_to_back_slash"},
-  { "keys": ["ctrl+shift+-"], "command": "toggle_snake_camel_pascal"}
+  { "keys": ["ctrl+shift+-"], "command": "toggle_snake_camel_pascal"},
+
+  // Is possible to package override a Sublime Text Default keybinding?
+  // https://forum.sublimetext.com/t/is-possible-to-package-override-a-sublime-text-default-keybinding/31688
+  { "keys": ["ctrl+e"], "command": "toogle_title_case" },
 ]
