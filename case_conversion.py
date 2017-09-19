@@ -33,6 +33,10 @@ def to_pascal_case(text, detectAcronyms, acronyms):
 
 def to_camel_case(text, detectAcronyms, acronyms):
     words, case, sep = case_parse.parseVariable(text, detectAcronyms, acronyms)
+
+    if len( words ) < 1:
+        return ''
+
     words[0] = words[0].lower()
     return ''.join(words)
 
