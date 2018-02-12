@@ -1,19 +1,19 @@
 [
     // Is possible to package override a Sublime Text Default keybinding?
     // https://forum.sublimetext.com/t/is-possible-to-package-override-a-sublime-text-default-keybinding/31688
-    { "keys": ["alt+w", "alt+w"], "command": "toogle_title_case" },
-    { "keys": ["alt+w", "alt+s"], "command": "convert_to_snake"},
-    { "keys": ["alt+w", "alt+q"], "command": "convert_to_camel"},
-    { "keys": ["alt+w", "alt+p"], "command": "convert_to_pascal"},
-    { "keys": ["alt+w", "alt+d"], "command": "convert_to_dot"},
-    { "keys": ["alt+w", "alt+h"], "command": "convert_to_dash"},
-    { "keys": ["alt+w", "alt+f"], "command": "convert_to_separate_words"},
+    { "keys": ["alt+w", "alt+w"], "command": "toogle_title_case", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+s"], "command": "convert_to_snake", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+q"], "command": "convert_to_camel", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+p"], "command": "convert_to_pascal", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+d"], "command": "convert_to_dot", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+h"], "command": "convert_to_dash", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+f"], "command": "convert_to_separate_words", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
 
-    { "keys": ["alt+w", "alt+-"], "command": "convert_to_slash"},
-    { "keys": ["alt+w", "alt+keypad_minus"], "command": "convert_to_slash"},
+    { "keys": ["alt+w", "alt+-"], "command": "convert_to_slash", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+keypad_minus"], "command": "convert_to_slash", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
 
-    { "keys": ["alt+w", "alt+b"], "command": "convert_to_back_slash"},
-    { "keys": ["alt+w", "alt+y"], "command": "toggle_snake_camel_pascal"},
+    { "keys": ["alt+w", "alt+b"], "command": "convert_to_back_slash", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
+    { "keys": ["alt+w", "alt+y"], "command": "toggle_snake_camel_pascal", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
 
-    { "keys": ["alt+w", "alt+shift+s"], "command": "convert_to_screaming_snake"},
+    { "keys": ["alt+w", "alt+shift+s"], "command": "convert_to_screaming_snake", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": false } ] },
 ]
