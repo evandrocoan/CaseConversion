@@ -1,7 +1,7 @@
 [
     // Is possible to package override a Sublime Text Default keybinding?
     // https://forum.sublimetext.com/t/is-possible-to-package-override-a-sublime-text-default-keybinding/31688
-    { "keys": ["alt+w", "alt+w"], "command": "toogle_title_case" },
+    { "keys": ["alt+w", "alt+w"], "command": "toggle_title_case" },
     { "keys": ["alt+w", "alt+s"], "command": "convert_to_snake" },
     { "keys": ["alt+w", "alt+q"], "command": "convert_to_camel" },
     { "keys": ["alt+w", "alt+p"], "command": "convert_to_pascal" },

@@ -11,7 +11,7 @@ def upcase_first_letter(s):
 def lower_first_letter(s):
     return s[0].lower() + s[1:]
 
-class ToogleTitleCaseCommand(sublime_plugin.TextCommand):
+class ToggleTitleCaseCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
 

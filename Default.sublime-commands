@@ -8,6 +8,10 @@
 	    "command": "convert_to_camel"
 	},
 	{
+	    "caption": "Convert Case: TitleCase",
+	    "command": "toggle_title_case"
+	},
+	{
 	    "caption": "Convert Case: snake_case",
 	    "command": "convert_to_snake"
 	},
