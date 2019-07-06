@@ -2,6 +2,7 @@ import sublime
 import sublime_plugin
 import re
 import sys
+import unicodedata
 
 PYTHON = sys.version_info[0]
 
@@ -77,6 +78,11 @@ def toggle_case(text, detectAcronyms, acronyms):
         return text
 
 
+# https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
+def strip_accents(text):
+    return ''.join( character for character in unicodedata.normalize( 'NFD', text ) if unicodedata.category( character ) != 'Mn' )
+
+
 def run_on_selections(view, edit, func):
     settings = sublime.load_settings(SETTINGS_FILE)
     detectAcronyms = settings.get("detect_acronyms", True)
@@ -93,6 +99,7 @@ def run_on_selections(view, edit, func):
         # Preserve leading and trailing whitespace
         leading = text[:len(text)-len(text.lstrip())]
         trailing = text[len(text.rstrip()):]
+        text = strip_accents( text )
         new_text = leading + func(text.strip(), detectAcronyms, acronyms) + trailing
         if new_text != text:
             view.replace(edit, region, new_text)
